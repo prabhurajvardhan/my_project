@@ -1,17 +1,20 @@
-import Reference from "./reference"
-import SignUp from "./signup"
 
+import SignIn from "./signin"
+import SignUp from "./signup"
+import {Routes,Route} from 'react-router-dom'
 
 function App() {
 
 
   return (
     <>
-      <div className="">
+      <Routes>
+        <Route path="/signup" element={<SignUp/>} />
+        <Route path="/signin" element={<SignIn/>} />
         
-        <SignUp/>
+      </Routes>
         
-      </div>
+       
      
     </>
   )
